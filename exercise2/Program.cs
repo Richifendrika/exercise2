@@ -8,7 +8,7 @@ namespace exercise2
 {
     public class Program
     {
-        int[] Richi = new int[30];
+        int[] richi = new int[30];
         int n;
 
         public void read()
@@ -23,6 +23,16 @@ namespace exercise2
                     break;
                 else
                     Console.WriteLine("\nJumlah maksimal data yang harus dimasukkan adalah 30. \n");
+            }
+            Console.WriteLine("\n----------");
+            Console.WriteLine("Masukkan data \n");
+            
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write("<" + (i + 1) + ">");
+                string s1 = Console.ReadLine();
+
+                richi[i] = Int32.Parse(s1);
             }
         
 
