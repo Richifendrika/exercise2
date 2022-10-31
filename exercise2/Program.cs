@@ -8,6 +8,7 @@ namespace exercise2
 {
     internal class Program
     {
+        int[] arr = new int[30];
         static void Main(string[] args)
         {
         }
