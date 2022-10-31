@@ -26,7 +26,7 @@ namespace exercise2
             }
             Console.WriteLine("\n----------");
             Console.WriteLine("Masukkan data \n");
-            
+
             for (int i = 0; i < n; i++)
             {
                 Console.Write("<" + (i + 1) + ">");
@@ -34,7 +34,32 @@ namespace exercise2
 
                 richi[i] = Int32.Parse(s1);
             }
-        
+        }
+
+        public void display ()
+        {
+            Console.WriteLine("\n----------");
+            Console.WriteLine("Mengurutkan data \n");
+
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine(richi[i]);
+            }
+        }
+
+        public void sort()
+        {
+           for (int i = 1; i < n - 1; i++)
+           {
+                int Temp = richi[i];
+                int AR = i - 1;
+
+                while (AR >= 0 && richi[AR] > Temp)
+                {
+                    richi[AR + 1] = richi[AR];
+                    AR
+                }
+           
 
         static void Main(string[] args)
         {
